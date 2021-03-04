@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
+    <script src="app.js"></script>
+</head>
+<style>
+    html {
+        display: flex;
+    }
+</style>
+
+<body>
+    <section class="galleryapp">
+
+        <div v-for="urll in urls">
+
+            <img v-bind:src="urll.url" v-on:click="selectimage(urll)" height="200px">
+        </div>
+    </section>
+</body>
+
+</html>
